@@ -1,0 +1,4 @@
+{"level":"error","error":"http: Server closed","time":"2022-07-30T15:15:22+08:00","caller":"/Users/lixinhua/GO/pkg/mod/github.com/duxphp/duxgo@v0.0.0-20220730071409-3657bf56a61e/bootstrap/bootstrap.go:436","message":"http stop"}
+{"level":"error","error":"http: Server closed","time":"2022-07-30T15:16:00+08:00","caller":"/Users/lixinhua/GO/pkg/mod/github.com/duxphp/duxgo@v0.0.0-20220730071409-3657bf56a61e/bootstrap/bootstrap.go:436","message":"http stop"}
+{"level":"error","error":"http: Server closed","time":"2022-07-30T15:18:41+08:00","caller":"/Users/lixinhua/GO/pkg/mod/github.com/duxphp/duxgo@v0.0.0-20220730071409-3657bf56a61e/bootstrap/bootstrap.go:436","message":"http stop"}
+{"level":"error","body":"","error":"html/template: \"template/welcome.tpl\" is undefined","time":"2022-07-30T16:55:24+08:00","caller":"/Users/lixinhua/GO/pkg/mod/github.com/duxphp/duxgo@v0.0.0-20220730085448-a7d8036546e1/bootstrap/bootstrap.go:131","message":"error"}

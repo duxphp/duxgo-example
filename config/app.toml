@@ -1,0 +1,52 @@
+
+[alarm]
+  urls = []
+
+[app]
+  baseurl = "http://127.0.0.1:8080"
+  safekey = ""
+
+[cache]
+  size = 100
+
+[jwt]
+  expired = 21600
+  renewal = 604800
+
+[logger]
+
+  [logger.db]
+    compress = false
+    level = "debug"
+    maxage = 365
+    maxbackups = 100
+    maxsize = 1
+    path = "./logs/db.log"
+
+  [logger.default]
+    compress = false
+    level = "warn"
+    maxage = 365
+    maxbackups = 100
+    maxsize = 1
+    path = "./logs/log.log"
+
+  [logger.request]
+    compress = false
+    level = "debug"
+    maxage = 365
+    maxbackups = 100
+    maxsize = 1
+    path = "./logs/request.log"
+    status = true
+
+  [logger.service]
+    status = true
+    path = "./logs/service"
+
+[server]
+  debug = true
+  debugmsg = "业务繁忙，请稍后重试"
+  port = 8080
+  timeout = 30
+
