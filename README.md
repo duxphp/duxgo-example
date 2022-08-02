@@ -20,6 +20,12 @@ DuxGO 是一款基于 go-echo 框架整合常用的 ORM、日志、队列、缓�
 go install
 ```
 
+私有仓库访问请执行以下命令避开代理，内部成员请联系管理员 admin@duxphp.com 获取仓库权限：
+
+```sh
+go env -w GOPRIVATE=github.com/duxphp
+```
+
 # 使用方法
 
 ## 1. 修改数据库配置
