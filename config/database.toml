@@ -1,6 +1,6 @@
 
 [db]
-dbname = "duxgo"
+dbname = "duxtest"
 host = "localhost"
 password = ""
 port = 3306

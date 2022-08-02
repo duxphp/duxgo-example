@@ -1,0 +1,26 @@
+
+[driver]
+  maxsize = 10240
+  type = "local"
+
+  [driver.local]
+    path = "uploads"
+    urlpath = "uploads"
+
+  [driver.qiniu]
+    accountkey = ""
+    accountname = ""
+    bucket = ""
+    domain = "https://"
+
+[imageresize]
+  height = 800
+  status = true
+  width = 800
+
+[imagewater]
+  file = "./resources/images/watermark.png"
+  margin = 10
+  opacity = 0.5
+  position = 0
+  status = false

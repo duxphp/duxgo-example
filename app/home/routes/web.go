@@ -6,7 +6,6 @@ import (
 
 func RouteWeb(router *util.RouterData) {
 	//router.Get("/", func(ctx echo.Context) error {
-	//	return response.New(ctx).Send("ok")
+	//	return ctx.Render(200, "home.gohtml", nil)
 	//}, "首页")
-
 }
