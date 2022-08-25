@@ -2,7 +2,6 @@ package home
 
 import (
 	"duxgotest/app/home/routes"
-	"github.com/duxphp/duxgo/core"
 	"github.com/duxphp/duxgo/register"
 	"github.com/duxphp/duxgo/util"
 	"github.com/labstack/echo/v4"
@@ -26,6 +25,5 @@ func AppRoute(router register.Router, app *echo.Echo) {
 }
 
 func Route(router register.Router) {
-	core.Logger.Debug().Msg("dsadsad")
 	routes.RouteWeb(router["web"])
 }
