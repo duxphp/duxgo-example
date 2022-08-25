@@ -58,3 +58,9 @@ go run main.go
 ```
 0.0.0.0:8080/admin
 ```
+
+# 讨论
+
+您可以暂时加入我们的 Duxravel 群进行讨论
+
+<img src="https://www.duxravel.com/assets/images/wechat-684dffdb33c2f67413bf3bdd162fc815.png" />
