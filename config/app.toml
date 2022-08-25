@@ -18,26 +18,26 @@
   [logger.db]
     compress = false
     level = "debug"
-    maxage = 365
-    maxbackups = 100
-    maxsize = 1
-    path = "./logs/db.log"
+    maxAge = 365
+    maxBackups = 100
+    maxSize = 1
+    path = "./logs/database"
 
   [logger.default]
     compress = false
     level = "warn"
-    maxage = 365
-    maxbackups = 100
-    maxsize = 1
-    path = "./logs/log.log"
+    maxAge = 365
+    maxBackups = 100
+    maxSize = 1
+    path = "./logs/default"
 
   [logger.request]
     compress = false
     level = "debug"
-    maxage = 365
-    maxbackups = 100
-    maxsize = 1
-    path = "./logs/request.log"
+    maxAge = 365
+    maxBackups = 100
+    maxSize = 1
+    path = "./logs/request"
     status = true
 
   [logger.service]
