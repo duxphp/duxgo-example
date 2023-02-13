@@ -1,0 +1,41 @@
+alarm:
+  urls: [ ]
+app:
+  baseurl: http://127.0.0.1:8080
+  safekey: ""
+cache:
+  size: 100
+jwt:
+  expired: 21600
+  renewal: 604800
+logger:
+  db:
+    compress: false
+    level: debug
+    maxAge: 365
+    maxBackups: 100
+    maxSize: 1
+    path: ./logs/database
+  default:
+    compress: false
+    level: warn
+    maxAge: 365
+    maxBackups: 100
+    maxSize: 1
+    path: ./logs/default
+  request:
+    compress: false
+    level: debug
+    maxAge: 365
+    maxBackups: 100
+    maxSize: 1
+    path: ./logs/request
+    status: true
+  service:
+    status: true
+    path: ./logs/service
+server:
+  debug: true
+  debugmsg: 业务繁忙，请稍后重试
+  port: 8080
+  timeout: 30

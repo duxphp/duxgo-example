@@ -1,0 +1,20 @@
+db:
+  dbname: duxtest
+  host: localhost
+  password: ""
+  port: 3306
+  type: mysql
+  username: root
+  maxIdleConns: 10
+  maxOpenConns: 100
+mongoDB:
+  host: localhost
+  port: 27017
+  dbname: duxgo
+  username: ""
+  password: ""
+redis:
+  db: 0
+  host: localhost
+  password: ""
+  port: 6379

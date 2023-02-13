@@ -1,29 +1,21 @@
 package home
 
 import (
-	"duxgotest/app/home/routes"
-	"github.com/duxphp/duxgo/register"
-	"github.com/duxphp/duxgo/util"
-	"github.com/labstack/echo/v4"
+	"github.com/duxphp/duxgo/v2/app"
 )
 
 var config = struct {
 }{}
 
 func App() {
-	register.App(&register.AppConfig{
-		Name:     "home",
-		Config:   &config,
-		Route:    Route,
-		AppRoute: AppRoute,
+	app.Register(&app.Config{
+		Name:   "home",
+		Title:  "演示",
+		Desc:   "这是一个演示应用",
+		Config: &config,
+		Init:   Init,
 	})
 }
 
-func AppRoute(router register.Router, app *echo.Echo) {
-	router["web"] = util.NewRouter(app.Group(""))
-
-}
-
-func Route(router register.Router) {
-	routes.RouteWeb(router["web"])
+func Init() {
 }

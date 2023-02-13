@@ -1,6 +1,7 @@
 package main
 
 import (
+	"duxgotest/app/home"
 	"embed"
 	"github.com/duxphp/duxgo/v2"
 )
@@ -12,6 +13,8 @@ func main() {
 
 	// 创建框架服务
 	dux := duxgo.New()
+
+	dux.RegisterApp(home.App)
 
 	dux.Run()
 
