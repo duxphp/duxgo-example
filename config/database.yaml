@@ -1,5 +1,5 @@
 db:
-  dbname: duxtest
+  dbname: duxgo
   host: localhost
   password: ""
   port: 3306

@@ -102,4 +102,4 @@ require (
 	gorm.io/gorm v1.23.8 // indirect
 )
 
-replace github.com/duxphp/duxgo/v2 => /Volumes/Web/gocore
+replace github.com/duxphp/duxgo/v2 => /Volumes/Web/duxgo
