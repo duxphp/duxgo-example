@@ -2,19 +2,10 @@ driver:
   maxsize: 10240
   type: qiniu
   local:
-    path: uploads
-    urlpath: uploads
+    path: ./uploads
+    domain: http://0.0.0.0:8080
   qiniu:
     accessKey: 0AFgqoXKorAd4R2T2MytmOsvPaaxKAOoKZ2Ju-nm
     secretKey: uy1RLddGE2dWWpS7M-m4WdWKHSRNsH9JSRmLyxAD
     bucket: s3-cn-south-1.qiniucs.com
-imageresize:
-  height: 800
-  status: true
-  width: 800
-imagewater:
-  file: ./resources/images/watermark.png
-  margin: 10
-  opacity: 0.5
-  position: 0
-  status: false
+    domain: http://cdn.xxxx.com
