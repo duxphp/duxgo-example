@@ -1,12 +1,12 @@
 [
   {
     "method": "GET",
-    "path": "/",
-    "name": "github.com/duxphp/duxgo/v2/web.Init.func5"
+    "path": "/uploads*",
+    "name": "github.com/labstack/echo/v4.StaticDirectoryHandler.func1"
   },
   {
     "method": "GET",
-    "path": "/uploads*",
-    "name": "github.com/labstack/echo/v4.StaticDirectoryHandler.func1"
+    "path": "/",
+    "name": "github.com/duxphp/duxgo/v2/web.Init.func5"
   }
 ]

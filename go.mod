@@ -50,6 +50,7 @@ require (
 	github.com/rivo/uniseg v0.4.3 // indirect
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/rs/zerolog v1.29.0 // indirect
+	github.com/samber/do v1.6.0 // indirect
 	github.com/samber/lo v1.37.0 // indirect
 	github.com/spf13/afero v1.9.3 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
