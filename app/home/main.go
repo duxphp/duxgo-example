@@ -1,9 +1,7 @@
 package home
 
 import (
-	"fmt"
 	"github.com/duxphp/duxgo/v2/app"
-	"github.com/duxphp/duxgo/v2/global"
 	"github.com/duxphp/duxgo/v2/route"
 	"github.com/gofiber/fiber/v2"
 )
@@ -31,10 +29,5 @@ func Register() {
 	group.Get("/ss", func(c *fiber.Ctx) error {
 		return c.SendString("I'm a GET request!")
 	}, "首页", "web.home")
-
-	routes := global.App.GetRoutes()
-	for _, r := range routes {
-		fmt.Printf("%s - %s\n", r.Method, r.Path)
-	}
 
 }

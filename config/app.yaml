@@ -9,31 +9,16 @@ jwt:
   expired: 21600
   renewal: 604800
 logger:
-  db:
-    compress: false
-    level: debug
-    maxAge: 365
-    maxBackups: 100
-    maxSize: 1
-    path: ./logs/database
   default:
-    compress: false
-    level: warn
-    maxAge: 365
-    maxBackups: 100
-    maxSize: 1
-    path: ./logs/default
-  request:
-    compress: false
     level: debug
+    compress: false
     maxAge: 365
     maxBackups: 100
     maxSize: 1
-    path: ./logs/request
-    status: true
-  service:
-    status: true
-    path: ./logs/service
+  db:
+    level: debug
+  request:
+    level: debug
 server:
   debug: true
   debugmsg: 业务繁忙，请稍后重试
