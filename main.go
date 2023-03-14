@@ -4,6 +4,7 @@ import (
 	"duxgotest/app/home"
 	"embed"
 	"github.com/duxphp/duxgo/v2"
+	"github.com/duxphp/duxgo/v2/views"
 )
 
 //go:embed views/* app/*/views/*
@@ -15,6 +16,8 @@ func main() {
 	dux := duxgo.New()
 
 	dux.RegisterApp(home.App)
+
+	views.TplFs = ViewsFs
 
 	dux.Run()
 
