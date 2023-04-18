@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/duxphp/duxgo/v2/route"
+	"github.com/duxweb/go-fast/route"
 	"github.com/gofiber/fiber/v2"
 )
 

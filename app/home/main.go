@@ -1,9 +1,10 @@
 package home
 
 import (
-	"github.com/duxphp/duxgo/v2/app"
-	"github.com/duxphp/duxgo/v2/route"
+	"github.com/duxweb/go-fast/app"
+	"github.com/duxweb/go-fast/route"
 	"github.com/gofiber/fiber/v2"
+	"github.com/rotisserie/eris"
 )
 
 var config = struct {
@@ -26,7 +27,9 @@ func Init() {
 
 func Register() {
 	group := route.Get("web")
-	group.Get("/ss", func(c *fiber.Ctx) error {
+
+	group.Get("/test", func(c *fiber.Ctx) error {
+		return eris.New("dsad")
 		return c.SendString("I'm a GET request!")
 	}, "首页", "web.home")
 

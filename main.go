@@ -3,8 +3,8 @@ package main
 import (
 	"duxgotest/app/home"
 	"embed"
-	"github.com/duxphp/duxgo/v2"
-	"github.com/duxphp/duxgo/v2/views"
+	dux "github.com/duxweb/go-fast"
+	"github.com/duxweb/go-fast/views"
 )
 
 //go:embed views/* app/*/views/*
@@ -13,13 +13,13 @@ var ViewsFs embed.FS
 func main() {
 
 	// 创建框架服务
-	dux := duxgo.New()
+	app := dux.New()
 
-	dux.RegisterApp(home.App)
+	app.RegisterApp(home.App)
 
 	views.TplFs = ViewsFs
 
-	dux.Run()
+	app.Run()
 
 	//// 设置基础配置
 	//server.SetConfigDir("./config/")
