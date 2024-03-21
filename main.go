@@ -4,7 +4,6 @@ import (
 	"duxgotest/app/home"
 	"embed"
 	dux "github.com/duxweb/go-fast"
-	"github.com/duxweb/go-fast/views"
 )
 
 //go:embed views/* app/*/views/*
@@ -16,8 +15,6 @@ func main() {
 	app := dux.New()
 
 	app.RegisterApp(home.App)
-
-	views.TplFs = ViewsFs
 
 	app.Run()
 

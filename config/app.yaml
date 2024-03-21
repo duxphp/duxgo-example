@@ -21,6 +21,5 @@ logger:
     level: debug
 server:
   debug: true
-  debugmsg: 业务繁忙，请稍后重试
-  port: 8080
+  port: 8900
   timeout: 30

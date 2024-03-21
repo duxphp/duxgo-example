@@ -3,8 +3,8 @@ package home
 import (
 	"github.com/duxweb/go-fast/app"
 	"github.com/duxweb/go-fast/route"
-	"github.com/gofiber/fiber/v2"
-	"github.com/rotisserie/eris"
+	"github.com/labstack/echo/v4"
+	"net/http"
 )
 
 var config = struct {
@@ -28,9 +28,8 @@ func Init() {
 func Register() {
 	group := route.Get("web")
 
-	group.Get("/test", func(c *fiber.Ctx) error {
-		return eris.New("dsad")
-		return c.SendString("I'm a GET request!")
+	group.Get("/test", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World!")
 	}, "首页", "web.home")
 
 }
